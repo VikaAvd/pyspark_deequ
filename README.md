@@ -14,10 +14,10 @@ This project demonstrates how to use **PySpark** with **AWS Deequ** to perform d
 
 ## 📂 Folder Structure
 ```bash
-├── 📒 Deequ_pySpark_skeleton.ipynb       # Completed notebook with results and explanations
-├── 📄 constraint_verification_report.csv # Exported test report (CSV format)
-├── 🌐 constraint_verification_report.html# Exported test report (HTML format)
-└── 📝 README.md                          # Project description and instructions
+├── 📒 Deequ_pySpark_skeleton.ipynb        # Completed notebook with results and explanations
+├── 📄 constraint_verification_report.csv  # Exported test report (CSV format)
+├── 🌐 constraint_verification_report.html # Exported test report (HTML format)
+└── 📝 README.md                           # Project description and instructions
 ```
 
 ## ⚙️ Environment Setup
@@ -30,8 +30,8 @@ This project demonstrates how to use **PySpark** with **AWS Deequ** to perform d
 5. Run the rebuilt docker Image:
     ```docker run -v ${PWD}:/home/jovyan/work -p 8888:8888 -p 4040:4040 --user root -e JUPYTER_ENABLE_LAB=yes --name pyspark jupyter/pyspark-notebook:spark-3.5.5```    
 6. After the container starts, find and open one of the tokenized URLs in the terminal. It will look like:
-    http://localhost:8888/lab?token={your_token}
-    http://127.0.0.1:8888/lab?token={your_token}
+    - http://localhost:8888/lab?token={your_token}
+    - http://127.0.0.1:8888/lab?token={your_token}
 6. Copy the JDBC Driver to the Container.
     You’ll need a Microsoft SQL Server JDBC driver (e.g. mssql-jdbc-12.10.0.jre11.jar).
     Run this from PowerShell (adjust the path and versions as needed):
@@ -45,7 +45,7 @@ This project demonstrates how to use **PySpark** with **AWS Deequ** to perform d
 2. Follow along the notebook steps:
     - Run `%env SPARK_VERSION=3.5.5`
     - Initialize session with PyDeequ and JDBC Support
-    - Connect to DB (adjust connection properties with your values)
+    - Connect to DB (**adjust connection properties with your values**)
     - Run Analysis and Profiling sections
     - Generate Constraint Suggestions
     - Run Constraint Verifications
