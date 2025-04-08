@@ -13,13 +13,14 @@ This project demonstrates how to use **PySpark** with **AWS Deequ** to perform d
 - 📄 Check reports in **CSV** and **HTML** formats
 
 ## 📂 Folder Structure
-.
+```bash
 ├── 📒 Deequ_pySpark_skeleton.ipynb       # Completed notebook with results and explanations
 ├── 📄 constraint_verification_report.csv # Exported test report (CSV format)
 ├── 🌐 constraint_verification_report.html# Exported test report (HTML format)
 └── 📝 README.md                          # Project description and instructions
+```
 
-## Environment Setup
+## ⚙️ Environment Setup
 1. Install Docker on Windows https://docs.docker.com/desktop/windows/install/
 2. Clone the Jupyter Docker Stacks repository https://github.com/jupyter/docker-stacks
     ```cd docker-stacks```
