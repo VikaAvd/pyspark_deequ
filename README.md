@@ -26,7 +26,8 @@ This project demonstrates how to use **PySpark** with **AWS Deequ** to perform d
     ```cd docker-stacks```
 3. Update the Dockerfile to use Spark 3.5.5 (in the ```docker-stacks/pyspark-notebook/Dockerfile```) if needed.
 4. Rebuild docker "pyspark-notebook" image to support spark 3.5.5 version for PyDeequ according to instructions: https://jupyter-docker-stacks.readthedocs.io/en/latest/using/specifics.html    
-    Note: Generate SHA256 for your file 'spark-3.5.5-bin-hadoop3.tgz' to add a checksum.
+    Note: Generate ***SHA256*** for your file 'spark-3.5.5-bin-hadoop3.tgz' to add a checksum (e.g.: ```SHA256 hash of spark-3.5.5-bin-hadoop3.tgz:8daa3f7fb0af2670fe11beb8a2ac79d908a534d7298353ec4746025b102d5e31``` )
+
 5. Run the rebuilt docker Image:
     ```docker run -v ${PWD}:/home/jovyan/work -p 8888:8888 -p 4040:4040 --user root -e JUPYTER_ENABLE_LAB=yes --name pyspark jupyter/pyspark-notebook:spark-3.5.5```    
 6. After the container starts, find and open one of the tokenized URLs in the terminal. It will look like:
